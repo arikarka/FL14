@@ -15,59 +15,68 @@
     <div id="main">
       <div id="container">
         <div id="content" role="main">
+          <header>
           <img src="logo.png" alt="asda">
-          <h6 style="font-size: 35px;">HTML BASICS</h6><br>
-
-
-        <b><u><h7 style="font-size: 17px;">Home</h7></u>
-           <u><h8 style="font-size: 17px;"></h8>Registration</u>
-           <u><h9 style="font-size: 17px;"></h9>Headings</u>
-           <u><h10 style="font-size: 17px;"></h10>Types of lists</u>
-           <u><h11 style="font-size: 17px;"></h11>Image</u>
-           <u><h12 style="font-size: 17px;"></h12>Table</u>
-           <u><h13 style="font-size: 17px;"></h13>Blockquotes</u>
-           <u><h14 style="font-size: 17px;"></h14>Text formats</u></b>
-          <hr>
+          <h1>HTML BASICS</h1>
+         <nav>
+          <a href=""><b>Home</b></a>
+          <a href="#reg"><b>Registration</b></a>
+           <a href="#head"><b>Headings</b></a>
+           <a href="#types"><b>Types of lists</b></a>
+           <a href="#image"><b>Image</b></a>
+           <a href="#table"><b>Table</b></a>
+           <a href="#block"><b>Blockquotes</b></a>
+           <a href="#text"><b>Text formats</b></a>
+         </nav>
+           <hr>
+           </header>
+           <main>
+           <article>
          <p> <b>Fructose</b>, or
          <b>fruit sugar</b>, is a simple
           <i>ketonic monosaccharide</i> found in many plants, where it is often bonded to glucose to form the disaccharide sucrose.
           It is one of the three dietary
           <u>monosaccharides</u>, along with glucose and galactose, that are absorbed directly into blood during digestion.
-          Its formula is C6H12O6 and its density is 1.694 g/cm3 .
+          Its formula is C<sub><small>6</small></sub>H<sub><small>12</small></sub><small>O</small><sub>6</sub> and its density is 1.694 g/cm<sup><small>3</small></sup> .
           Fructose was discovered by French chemist
-          <u><a href="2.html" style="color:rgb(156, 13, 175);">Augustin-Pierre Dubrunfaut</a></u> in 
-          <a style="background: rgb(241, 238, 7);">1847</a>, <s>not in 1848</s>.</p>
+          <a href="">Augustin-Pierre Dubrunfaut</a> in 
+          <mark>1847</mark>, <s>not in 1848</s>.</p>
 
           <p>It makes us <b>strong</b>!
           <i>This is emphasized</i>.</p>
           
           <p>Excessive consumption of fructose (especially from sugar-sweetened beverages) may contribute to insulin resistance, obesity, elevated
-          Low-density lipoprotein LDL cholesterol and triglycerides, leading to metabolic syndrome.
-          The European Food Safety Authority EFSA stated that fructose may be preferable over sucrose and glucose in sugar-sweetened foods and beverages because of its lower effect on postprandial blood sugar levels, and noted that
+          <abbr tittle="Low-density lipoprotein"> LDL</abbr> cholesterol and triglycerides, leading to metabolic syndrome.
+          <abbr tittle="The European Food Safety Authority">The EFSA</abbr>  stated that fructose may be preferable over sucrose and glucose in sugar-sweetened foods and beverages because of its lower effect on postprandial blood sugar levels, and noted that
           <i>high intakes of fructose may lead to metabolic complications such as dyslipidaemia, insulin resistance, and increased visceral adiposity </i>(this is a citation).</p>
+          </article>
           <hr>
+          <section id="reg">
           <form action="/" method="">
            Login: <input type="text" name="Login" maxlength="12"><br>
             Email:<input type="text" name="Email" maxlength="30"><br>
             Password:<input type="password" name="Password" maxlength="32"><br>
-          Select Programming Language
+          <p>Select Programming Language
           <select name="lang">
             <option>JavaScript</option>
             <option>Python</option>
             <option>PHP</option>
-          </select><br>
+          </select></p>
               <textarea></textarea><br>
               <button>Submit</button> </form>
-          
+          </section>
+          <section id="head">
          <p> h1 defines the most important heading. h6 defines the least important heading. Font-size for h1 is the same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside header</p>
           
-          <h1>Heading 2</h1>
-         <h2>Heading 3</h2>
-          <h3>Heading 4</h3>
-          <h4>Heading 5</h4>
-          <h5>Heading 6</h5>
+          <h2>Heading 2</h2>
+         <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          </section>
         <hr>
-       <p> <h15 style="font-size: 20px;">Unordered Shopping List</h15></p>
+        <section id="types">
+       <p> <h3>Unordered Shopping List</h3></p>
          <ul> 
            <li>Vegetables:</li>
            <ul>
@@ -84,7 +93,7 @@
         <li>Butter</li>
         </ul>
 
-        <p><h16 style="font-size: 20px;"> Definition List</h16></p>
+        <p><h3> Definition List</h3></p>
        <dl>
           <dt><b>HTML</b></dt>
          <dd> HTML is the standard markup language to create Web pages.</dd>
@@ -94,7 +103,7 @@
           <dd>JavaScript is a scripting languages, primarily used on the Web.</dd>
         </dl> <br>
           
-          <p><h17 style="font-size: 20px;">Ordered To-do List</h17></p>
+          <p><h3>Ordered To-do List</h3></p>
          <ul> <li type="1">Wash your hands</li>
           <li type="1">Clean your apartment</li>
           <li type="1">Do your homework</li><ul>
@@ -103,11 +112,14 @@
               <li type="A">Upload files</li>
             </ul>
             </ul>
+            </section>
+            <hr>
+            <section id="image">
+              <img src="fruits.jpg" alt="fruits">
+            </section>  
           <hr>
-          <img src="fruits.jpg" alt="fruits">
-          <hr>
-          
-         <p><h18 style="font-size: 20px;"> Sugar content of selected common plant foods (g/100g)</h18></p>
+          <section id="table">
+         <p><h2> Sugar content of selected common plant foods (g/100g)</h2></p>
           <table>
           <tr>
             <td>Food item</td>
@@ -135,28 +147,40 @@
           <td>1.7</td>
           </tr>
         </table>
+        </section>
         <hr>
-         <p><h17 style="font-size: 20px;">Blockquotes</h17></p>
+        <section id="block">
+         <p><h2>Blockquotes</h2></p>
         <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
           
-      <p><i>"I think we're all sensitive, everyone has a certain way about themselves that people don't like to let their emotions out too often. I think people tend to suppress them and hold them in, so I think there's a bit of that in me."</i></p>
-          
-          <u><a href="1.html">Jason Statham</a></u>
+      <blockquote>"I think we're all sensitive, everyone has a certain way about themselves that people don't like to let their emotions out too often. I think people tend to suppress them and hold them in, so I think there's a bit of that in me."
+    <br>
+          <a href="1.html">Jason Statham</a>
+        </blockuote>
+          </section>
           <hr>
-        <p>Text formats</p>
-      <p>Preformatted Text</p>
-          Text in a <b>pre</b> element
-          is displayed in a fixed-width
-          font, and it preserves
-          both           <b>spaces</b> and
-          <b>line breaks</b>
+          <section id="text">
+        <p><h2>Text formats</h2></p>
+      <p><h3>Preformatted Text</h3></p>
+      <pre>
+        Text in a <b>pre</b> element
+        is displayed in a fixed-width
+        font, and it preserves
+        both           <b>spaces</b> and
+        <b>line breaks</b>
+        
+      </pre>
           
-        <p>This is code</p>
+        <p><h3>This is code</h3></p>
+        <pre>
           .container {
             width: 100%;
             padding: 10px 20px;
             text-align: center;
           }
+        </pre>
+        </section>
+      </main>
                   </div>
       </div>
     </div>

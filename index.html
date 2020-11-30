@@ -46,13 +46,13 @@
           <i>This is emphasized</i>.</p>
           
           <p>Excessive consumption of fructose (especially from sugar-sweetened beverages) may contribute to insulin resistance, obesity, elevated
-          <abbr tittle="Low-density lipoprotein"> LDL</abbr> cholesterol and triglycerides, leading to metabolic syndrome.
-          <abbr tittle="The European Food Safety Authority">The EFSA</abbr>  stated that fructose may be preferable over sucrose and glucose in sugar-sweetened foods and beverages because of its lower effect on postprandial blood sugar levels, and noted that
+          <abbr class="Low-density lipoprotein"> LDL</abbr> cholesterol and triglycerides, leading to metabolic syndrome.
+          <abbr class="The European Food Safety Authority">The EFSA</abbr>  stated that fructose may be preferable over sucrose and glucose in sugar-sweetened foods and beverages because of its lower effect on postprandial blood sugar levels, and noted that
           <i>high intakes of fructose may lead to metabolic complications such as dyslipidaemia, insulin resistance, and increased visceral adiposity </i>(this is a citation).</p>
           </article>
           <hr>
           <section id="reg">
-          <form action="/" method="">
+          <form>
            Login: <input type="text" name="Login" maxlength="12"><br>
             Email:<input type="text" name="Email" maxlength="30"><br>
             Password:<input type="password" name="Password" maxlength="32"><br>
@@ -76,24 +76,28 @@
           </section>
         <hr>
         <section id="types">
-       <p> <h3>Unordered Shopping List</h3></p>
-         <ul> 
-           <li>Vegetables:</li>
-           <ul>
-          <li>Potatos</li>
-        <li>Carrots</li>
-            <li>Cucumbers</li></ul>
-            <li>Fruits:</li>
-            <ul>
-        <li>Apples</li>
-            <li>Bananas</li>
-            <li>Pears</li>
+          <h3>Unordered Shopping List</h3>
+          <ul>
+            <li>
+              Vegetables:
+              <ul>
+                <li>Potatos</li>
+                <li>Carrots</li>
+                <li>Cucumbers</li>
+              </ul>
+            </li>
+            <li>
+              Fruits:
+              <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Pears</li>
+              </ul>
+            </li>
+            <li>Milk</li>
+            <li>Butter</li>
           </ul>
-          <li>Milk</li>
-        <li>Butter</li>
-        </ul>
-
-        <p><h3> Definition List</h3></p>
+        <h3> Definition List</h3>
        <dl>
           <dt><b>HTML</b></dt>
          <dd> HTML is the standard markup language to create Web pages.</dd>
@@ -103,15 +107,19 @@
           <dd>JavaScript is a scripting languages, primarily used on the Web.</dd>
         </dl> <br>
           
-          <p><h3>Ordered To-do List</h3></p>
-         <ul> <li type="1">Wash your hands</li>
-          <li type="1">Clean your apartment</li>
-          <li type="1">Do your homework</li><ul>
-             <li type="A"> Create HTML Page</li>
-              <li type ="A">Check all requirements & folder structure</li>
-              <li type="A">Upload files</li>
-            </ul>
-            </ul>
+          <h3>Ordered To-do List</h3>
+         
+           <ol>
+           <li>Wash your hands</li>
+          <li>Clean your apartment</li>
+          <li>Do your homework
+          </ol>
+          
+          <ol type="A">
+             <li>Create HTML Page</li>
+              <li>Check all requirements & folder structure</li>
+              <li>Upload files</li>
+             </ol>
             </section>
             <hr>
             <section id="image">
@@ -119,7 +127,7 @@
             </section>  
           <hr>
           <section id="table">
-         <p><h2> Sugar content of selected common plant foods (g/100g)</h2></p>
+       <h2> Sugar content of selected common plant foods (g/100g)</h2>
           <table>
           <tr>
             <td>Food item</td>
@@ -150,18 +158,17 @@
         </section>
         <hr>
         <section id="block">
-         <p><h2>Blockquotes</h2></p>
+         <h2>Blockquotes</h2>
         <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
           
-      <blockquote>"I think we're all sensitive, everyone has a certain way about themselves that people don't like to let their emotions out too often. I think people tend to suppress them and hold them in, so I think there's a bit of that in me."
-    <br>
+      <blockquote>
+        "I think we're all sensitive, everyone has a certain way about themselves that people don't like to let their emotions out too often. I think people tend to suppress them and hold them in, so I think there's a bit of that in me."</blockquote>
           <a href="1.html">Jason Statham</a>
-        </blocquote>
           </section>
           <hr>
           <section id="text">
-        <p><h2>Text formats</h2></p>
-      <p><h3>Preformatted Text</h3></p>
+        <h2>Text formats</h2>
+      <h3>Preformatted Text</h3>
       <pre>
         Text in a <b>pre</b> element
         is displayed in a fixed-width
@@ -171,7 +178,7 @@
         
       </pre>
           
-        <p><h3>This is code</h3></p>
+       <h3>This is code</h3>
         <pre>
           .container {
             width: 100%;
